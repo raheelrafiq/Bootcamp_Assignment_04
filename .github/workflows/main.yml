@@ -24,12 +24,16 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
-      
+    - name: Actions for yarn
+      uses: Borales/actions-yarn@2.1.0
+      with:
+        cmd: install
+        
     - name: creating build
-      run: npm build
+      run: yarn build
     
     - name: installing surge
       run: npm install -g surge
     
     - name: deploying
-      run: surge ./build http://bootcamp2020_assignment_04.surge.sh --token &{{ secrets.NEW_TOKEN }}
+      run: surge ./build http://bootcamp2020_assignment_04.surge.sh --token ${{secrets.NEW_TOKEN}}
