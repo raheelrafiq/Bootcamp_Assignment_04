@@ -32,4 +32,4 @@ jobs:
       run: npm install -g surge
     
     - name: deploying
-      run: surge ./build bootcamp2020_assignment_04.surge.sh --token &{{ secrets.NEW_TOKEN }}
+      run: surge ./build http://bootcamp2020_assignment_04.surge.sh --token &{{ secrets.NEW_TOKEN }}
