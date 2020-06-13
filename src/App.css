@@ -13,13 +13,13 @@ button{
   background-color: white;
 }
 .blue{
-  background-color: blue;
+  background-color: rgb(73, 73, 230);
 }
 .green{
   background-color: green;
 }
 .purple{
-  background-color: purple;
+  background-color: rgb(151, 39, 151);
 }
 .red{
   background-color: red;
